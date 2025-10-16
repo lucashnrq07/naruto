@@ -12,10 +12,11 @@ function mostrarPersonagem() {
     console.log(personagens);
     let id = (Math.floor(Math.random() * personagens.length));
     console.log(id);
-    
+
     let personagem = personagens[id];
     console.log(personagem.name);
     console.log(personagem.power);
     console.log(personagem.village.name);
     console.log(personagem.images[0].image_url);
+    document.getElementById("imagem").src = personagem.profile_image;
 }
