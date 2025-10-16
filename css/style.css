@@ -109,13 +109,18 @@ body {
 }
 
 .accent-btn {
-    font-size: .85rem;
-    background: transparent;
-    border: 1px solid rgba(91, 141, 239, 0.14);
-    color: var(--accent);
+      font-size: .85rem;
+    background: var(--accent);
+    color: #fff;
+    border: none;
     padding: .45rem .75rem;
     border-radius: 10px;
     cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.accent-btn:hover {
+    background: #1e4ecb; 
 }
 
 /* Responsividade */
