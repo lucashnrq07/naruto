@@ -14,9 +14,10 @@ function mostrarPersonagem() {
     console.log(id);
 
     let personagem = personagens[id];
-    console.log(personagem.name);
-    console.log(personagem.power);
-    console.log(personagem.village.name);
-    console.log(personagem.images[0].image_url);
+    console.log(personagem)
     document.getElementById("imagem").src = personagem.profile_image;
+    document.getElementById("char-name").textContent = personagem.name
+    document.getElementById("char-power").textContent = personagem.power
+    document.getElementById("char-village").textContent = personagem.village.name
+    document.getElementById("char-summary").textContent = personagem.summary
 }
