@@ -21,7 +21,7 @@ body {
 
 /* Card */
 .card {
-    width: 400px;
+    width: 500px;
     background: var(--card-bg);
     border-radius: var(--card-radius);
     box-shadow: var(--shadow);
@@ -109,7 +109,7 @@ body {
 }
 
 .accent-btn {
-      font-size: .85rem;
+    font-size: .85rem;
     background: var(--accent);
     color: #fff;
     border: none;

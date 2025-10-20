@@ -8,9 +8,9 @@ fetch('https://naruto-br-api.site/characters')
     .then(() => mostrarPersonagem());
 
 function mostrarPersonagem() {
-    let id = (Math.floor(Math.random() * personagens.length));
+    const id = (Math.floor(Math.random() * personagens.length));
 
-    let personagem = personagens[id];
+    const personagem = personagens[id];
     console.log(personagem)
     document.getElementById("imagem").src = personagem.profile_image;
     document.getElementById("char-name").textContent = personagem.name
