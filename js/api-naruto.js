@@ -4,7 +4,8 @@ let personagens;
 // Obter todos os personagens
 fetch('https://naruto-br-api.site/characters')
     .then(response => response.json())
-    .then(data => personagens = data);
+    .then(data => personagens = data)
+    .then(() => mostrarPersonagem());
 
 function mostrarPersonagem() {
     let id = (Math.floor(Math.random() * personagens.length));
