@@ -12,9 +12,12 @@ function mostrarPersonagem() {
 
     const personagem = personagens[id];
     console.log(personagem)
-    document.getElementById("imagem").src = personagem.profile_image;
+    document.getElementById("imagem").src = personagem.profile_image
     document.getElementById("char-name").textContent = personagem.name
-    document.getElementById("char-power").textContent = personagem.power
+    document.getElementById("rank").textContent = personagem.rank
     document.getElementById("char-village").textContent = personagem.village.name
     document.getElementById("char-summary").textContent = personagem.summary
-}
+    document.getElementById("char-power").textContent = `Poder: ${personagem.power}`
+
+    
+    }

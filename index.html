@@ -18,13 +18,19 @@
         <div class="card__body">
             <div class="card__title">
                 <h3 id="char-name" class="name">Nome do Personagem</h3>
-                <span class="badge">Raro</span>
+                <span id="rank" class="badge">Raro</span>
             </div>
 
             <div class="meta">
                 <div>
-                    <div class="meta__label">Poder</div>
-                    <div id="char-power" class="meta__value">Manipulação de relâmpagos</div>
+                    <div class="meta__label">Habilidades</div>
+                    <div id="habilidade" class="meta__value">
+                        <ol>
+                            <li>Habilidade 1</li>
+                            <li>Habilidade 2</li>
+                            <li>Habilidade 3</li>
+                        </ol>
+                    </div>
                 </div>
 
                 <div>
@@ -38,9 +44,9 @@
 
             <div class="card__footer">
                 <button class="accent-btn" aria-label="Ver mais detalhes" onclick="mostrarPersonagem();">Escolher Personagem</button>
-                <small style="color:var(--muted); font-size:.8rem">Nível: 47</small>
+                <small id="char-power" style="color: #000000fd; font-size:.9rem">Poder: 0</small>
             </div>
-        </div>
+        </div>  
     </article>
     <script src="./js/api-naruto.js"></script>
 </body>
